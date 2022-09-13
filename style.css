@@ -140,7 +140,8 @@
                             padding: 1rem 0;
                             text-align: center;
                             flex-flow: column;
-                            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0)
+                            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                            transition: .2s linear;
                         }
                         .header {
                             padding: 2rem;
@@ -159,6 +160,10 @@
                     @media (max-width:768px) {
                         #menu-btn {
                             display: inline-block;
+                            transition: .2s linear;
+                        }
+                        #menu-btn.fa.times {
+                            transform: rotate(180deg);
                         }
                         .header #search-btn {
                             display: none;
