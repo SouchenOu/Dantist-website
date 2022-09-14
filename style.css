@@ -116,8 +116,16 @@
         
         .home .content p {
             line-height: 2;
-            font-size: 3.5rem;
+            font-size: 3.8rem;
             padding: 2rem 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        .home .link-btn {
+            background-color: #00b8b8;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 300px;
+            text-align: center;
         }
         
         @media (max-width: 450px) {
