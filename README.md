@@ -25,5 +25,10 @@ Using classList is a convenient alternative to accessing an element's list of cl
 2: Home page:
 ------------
 
-<img width="1781" alt="Screen Shot 2022-09-14 at 11 43 51 AM" src="https://user-images.githubusercontent.com/87101785/190133789-195240ac-f7f5-45eb-ac5c-afabf20d947d.png">
+<img width="1606" alt="Screen Shot 2022-09-14 at 12 25 45 PM" src="https://user-images.githubusercontent.com/87101785/190141654-aad712cf-2bc9-43eb-9fa0-d5fa85d82d49.png">
+
+
+3: About section:
+
+<img width="1606" alt="Screen Shot 2022-09-14 at 12 25 55 PM" src="https://user-images.githubusercontent.com/87101785/190141716-5b4c43fd-f409-4c3f-a03f-703fc0b98683.png">
 
