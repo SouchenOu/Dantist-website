@@ -182,8 +182,8 @@
                 left: 0;
                 right: 0;
                 color: var(--black);
-                border-top: .3rem solid royalblue;
-                border-bottom: .3rem solid royalblue;
+                border-top: .3rem solid lightblue;
+                border-bottom: .3rem solid lightblue;
                 padding: 1rem 0;
                 text-align: center;
                 flex-flow: column;
