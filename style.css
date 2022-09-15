@@ -153,10 +153,10 @@
         .heading {
             text-align: center;
             font-size: 4rem;
-            color: black;
+            color: skyblue;
             text-transform: uppercase;
             font-weight: bolder;
-            margin-bottom: 3rem;
+            margin-bottom: 13rem;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
         
@@ -172,6 +172,15 @@
         }
         
         .services .box-container .box {
+            text-align: center;
+            padding: 2rem;
+            background-color: lightblue;
+            box-shadow: var(--box-shadow);
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        .services .box-container .box button {
             text-align: center;
             padding: 2rem;
             background-color: white;
@@ -193,6 +202,64 @@
             font-size: 1.5rem;
             color: var(--light-color);
             line-height: 2;
+        }
+        
+        .process {
+            background-color: aliceblue;
+        }
+        
+        .process .box-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            gap: 2rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        .process .box-container .box {
+            text-align: center;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .process .box-container .box img {
+            height: 19rem;
+            margin: 1rem 0;
+        }
+        
+        .process .box-container .box h3 {
+            font-size: 2rem;
+            padding: 1rem 0;
+            color: black;
+        }
+        
+        .process .box-container .box p {
+            font-size: 1.5rem;
+            color: var(--light-color);
+            line-height: 2;
+        }
+        
+        .review {
+            background-color: aliceblue;
+        }
+        
+        .review .box-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            gap: 2rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        .review .box-container .box {
+            text-align: center;
+            background-color: azure;
+            border-radius: .5rem;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .review .box-container .box img {
+            height: 19rem;
+            margin: 1rem 0;
         }
         
         @media (max-width: 450px) {
