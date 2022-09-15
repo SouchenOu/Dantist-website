@@ -26,23 +26,23 @@ $_SERVER is a PHP super global variable which holds information about headers, p
 
 echo $_SERVER['PHP_SELF'];
 
-echo "<br>";
+
 
 echo $_SERVER['SERVER_NAME'];
 
-echo "<br>";
+
 
 echo $_SERVER['HTTP_HOST'];
 
-echo "<br>";
+
 
 echo $_SERVER['HTTP_REFERER'];
 
-echo "<br>";
+
 
 echo $_SERVER['HTTP_USER_AGENT'];
 
-echo "<br>";
+
 
 echo $_SERVER['SCRIPT_NAME'];
 
@@ -50,17 +50,17 @@ echo $_SERVER['SCRIPT_NAME'];
 
 The result is:
 
-/demo/demo_global_server.php
+1: /demo/demo_global_server.php
 
-35.194.26.41
+2: 35.194.26.41
 
-35.194.26.41
+3: 35.194.26.41
 
-https://tryphp.w3schools.com/showphp.php?filename=demo_global_server
+4: https://tryphp.w3schools.com/showphp.php?filename=demo_global_server
 
-Mozilla/5.0 (Linux; Android 9; Redmi 8A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36
+5: Mozilla/5.0 (Linux; Android 9; Redmi 8A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36
 
-/demo/demo_global_server.php
+6: /demo/demo_global_server.php
 
 1: header
 ---------
