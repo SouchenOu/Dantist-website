@@ -24,29 +24,30 @@ $_SERVER is a PHP super global variable which holds information about headers, p
 
 <?php
 
-1:echo $_SERVER['PHP_SELF'];
+echo $_SERVER['PHP_SELF'];
 
+echo "<br>";
 
+echo $_SERVER['SERVER_NAME'];
 
-2:echo $_SERVER['SERVER_NAME'];
+echo "<br>";
 
+echo $_SERVER['HTTP_HOST'];
 
+echo "<br>";
 
-3:echo $_SERVER['HTTP_HOST'];
+echo $_SERVER['HTTP_REFERER'];
 
+echo "<br>";
 
+echo $_SERVER['HTTP_USER_AGENT'];
 
-4:echo $_SERVER['HTTP_REFERER'];
+echo "<br>";
 
-
-
-5:echo $_SERVER['HTTP_USER_AGENT'];
-
-
-
-6:echo $_SERVER['SCRIPT_NAME'];
+echo $_SERVER['SCRIPT_NAME'];
 
 ?>
+
 
 The result is:
 
