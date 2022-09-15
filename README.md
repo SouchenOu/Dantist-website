@@ -36,11 +36,11 @@ Using classList is a convenient alternative to accessing an element's list of cl
 
 <img width="1676" alt="Screen Shot 2022-09-15 at 11 43 11 AM" src="https://user-images.githubusercontent.com/87101785/190384323-820dcf33-bf94-4bf9-b23c-b6916e2802f4.png">
 
-5: process:
+5: processes:
 
 <img width="1676" alt="Screen Shot 2022-09-15 at 11 43 20 AM" src="https://user-images.githubusercontent.com/87101785/190384382-27ca225a-48e9-4bba-af0d-82a062ba0e44.png">
 
-6: client:
+6: clients:
 
 <img width="1676" alt="Screen Shot 2022-09-15 at 11 43 26 AM" src="https://user-images.githubusercontent.com/87101785/190384437-8b063393-7c48-4f14-9872-5d34c2df08aa.png">
 
