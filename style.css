@@ -189,6 +189,12 @@
             color: black;
         }
         
+        .services .box-container .box p {
+            font-size: 1.5rem;
+            color: var(--light-color);
+            line-height: 2;
+        }
+        
         @media (max-width: 450px) {
             html {
                 font-size: 10px;
