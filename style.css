@@ -162,6 +162,7 @@
         
         .services {
             background-color: azure;
+            padding: 12rem;
         }
         
         .services .box-container {
@@ -189,7 +190,7 @@
         
         .services .box-container .box img {
             margin: 1rem 0;
-            height: 19rem;
+            height: 10rem;
         }
         
         .services .box-container .box h3 {
@@ -206,6 +207,7 @@
         
         .process {
             background-color: aliceblue;
+            padding: 12rem;
         }
         
         .process .box-container {
@@ -223,7 +225,7 @@
         }
         
         .process .box-container .box img {
-            height: 19rem;
+            height: 10rem;
             margin: 1rem 0;
         }
         
@@ -241,6 +243,7 @@
         
         .review {
             background-color: aliceblue;
+            padding: 12rem;
         }
         
         .review .box-container {
@@ -255,11 +258,31 @@
             background-color: azure;
             border-radius: .5rem;
             box-shadow: var(--box-shadow);
+            padding: 2rem;
         }
         
         .review .box-container .box img {
-            height: 19rem;
-            margin: 1rem 0;
+            height: 30rem;
+            width: 25rem;
+            border-radius: 50%;
+        }
+        
+        .review .box-container .box h3 {
+            font-size: 2rem;
+            padding: 1rem 0;
+            color: black;
+        }
+        
+        .review .box-container .box span {
+            font-size: 2rem;
+            padding: 1rem 0;
+            color: lightblue;
+        }
+        
+        .review .box-container .box p {
+            font-size: 1.5rem;
+            color: var(--light-color);
+            line-height: 2;
         }
         
         @media (max-width: 450px) {
