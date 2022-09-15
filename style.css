@@ -150,6 +150,33 @@
             line-height: 2;
         }
         
+        .heading {
+            text-align: center;
+            font-size: 4rem;
+            color: black;
+            text-transform: uppercase;
+            font-weight: bolder;
+            margin-bottom: 3rem;
+        }
+        
+        .services .box-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            gap: 2rem;
+        }
+        
+        .img-ser {
+            width: 200px;
+        }
+        
+        .services .box-container .box {
+            text-align: center;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: var(--box-shadow);
+            border-radius: .5rem;
+        }
+        
         @media (max-width: 450px) {
             html {
                 font-size: 10px;
