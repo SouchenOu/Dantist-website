@@ -160,6 +160,10 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
         
+        .services {
+            background-color: azure;
+        }
+        
         .services .box-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
