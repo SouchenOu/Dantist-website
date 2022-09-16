@@ -218,7 +218,17 @@
     <!-----------contact section end------------>
     <section class="contact">
         <h1 class="heading">Make appointement</h1>
-        <form action="<?php echo $_SERVER['PHP_SELF']; ?>">
+        <form method="post">
+            <span>Your name:</span>
+            <input type="text" name="name" placeholder="Enter your name" class="box">
+            <span>Your email:</span>
+            <input type="text" name="email" placeholder="Enter your email" class="box">
+            <span>Your password:</span>
+            <input type="text" name="password" placeholder="Enter your password" class="box">
+            <span>Your dateAppointement:</span>
+            <input type="datetime-local" name="date" placeholder="Enter your dateTime" class="box">
+            <input type="submit" value="Make appointement" name="submit" class="link-btn">
+        </form>
 
     </section>
     <!-----------contact section end------------>
