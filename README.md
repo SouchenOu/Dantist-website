@@ -25,13 +25,13 @@ Using classList is a convenient alternative to accessing an element's list of cl
 2: Home page:
 ------------
 
-<img width="1606" alt="Screen Shot 2022-09-14 at 12 25 45 PM" src="https://user-images.githubusercontent.com/87101785/190141654-aad712cf-2bc9-43eb-9fa0-d5fa85d82d49.png">
-
+<img width="2142" alt="Screen Shot 2022-09-18 at 8 36 45 AM" src="https://user-images.githubusercontent.com/87101785/190891144-777f89b2-e5e4-4bf1-9a6f-d6ca0c0ee4c4.png">
 
 3: About section:
 -----------------
 
-<img width="1606" alt="Screen Shot 2022-09-14 at 12 25 55 PM" src="https://user-images.githubusercontent.com/87101785/190141716-5b4c43fd-f409-4c3f-a03f-703fc0b98683.png">
+<img width="2142" alt="Screen Shot 2022-09-18 at 8 36 58 AM" src="https://user-images.githubusercontent.com/87101785/190891150-87440195-d81b-4f1a-a4d0-a4f30305c036.png">
+
 
 4: services:
 -------------
@@ -46,6 +46,10 @@ Using classList is a convenient alternative to accessing an element's list of cl
 6: clients:
 -----------
 
-<img width="1676" alt="Screen Shot 2022-09-15 at 11 43 26 AM" src="https://user-images.githubusercontent.com/87101785/190384437-8b063393-7c48-4f14-9872-5d34c2df08aa.png">
+<img width="2142" alt="Screen Shot 2022-09-18 at 8 37 08 AM" src="https://user-images.githubusercontent.com/87101785/190891154-e873ba84-800d-4e71-ae53-81deaa6e7cfd.png">
 
 
+7: contact:
+-----------
+
+<img width="2142" alt="Screen Shot 2022-09-18 at 8 37 16 AM" src="https://user-images.githubusercontent.com/87101785/190891166-114895b1-da93-4256-9e5d-1cf3e0665648.png">
