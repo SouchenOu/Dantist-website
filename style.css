@@ -385,3 +385,11 @@
             display: flex;
             margin-left: 250px;
         }
+        
+        .contact form .message {
+            margin-bottom: 2rem;
+            border-radius: .5rem;
+            background-color: blue;
+            padding: 1.5rem 1rem;
+            font-size: 1.7rem;
+        }

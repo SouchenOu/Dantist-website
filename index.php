@@ -218,16 +218,24 @@
     <!-----------contact section end------------>
     <section class="contact">
         <h1 class="heading">Make appointement</h1>
-        <form method="post">
+        <!----The action attribute will default to the current URL. It is the most reliable and easiest way to say "submit the form to the same place it came from".------->
+        <form action="<?php echo $_server['PHP_SELF']; ?>" method=" post ">
+        <?php
+            if(isset($message))
+            {
+                echo '<p class="message">'.$message.'</p>';
+            }
+        ?>
+        <h1 class="message">Testing message box</h1>
             <span>Your name:</span>
-            <input type="text" name="name" placeholder="Enter your name" class="box">
+            <input type="text " name="name " placeholder="Enter your name " class="box ">
             <span>Your email:</span>
-            <input type="text" name="email" placeholder="Enter your email" class="box">
+            <input type="text " name="email " placeholder="Enter your email " class="box ">
             <span>Your password:</span>
-            <input type="text" name="password" placeholder="Enter your password" class="box">
+            <input type="text " name="password " placeholder="Enter your password " class="box ">
             <span>Your dateAppointement:</span>
-            <input type="datetime-local" name="date" placeholder="Enter your dateTime" class="box">
-            <input type="submit" value="Make appointement" name="submit" class="link-btn">
+            <input type="datetime-local " name="date " placeholder="Enter your dateTime " class="box ">
+            <input type="submit " value="Make appointement " name="submit " class="link-btn ">
         </form>
 
     </section>
