@@ -1,3 +1,27 @@
+<?php
+$conn= mysqli_connect('localhost', 'root', '','dantiste') or die('connection_failed');
+if(isset($_POST['submit']))//insset means si en click sur le button 
+{
+    $name = mysqli_real_escape_string($conn, $_POST['name']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $number = $_POST['number'];
+    $date =$_POST['date'];
+
+$insert = mysqli_query($conn, "INSERT INTO `dantiste_largo` (name,number, email, date) 
+    VALUES ('$name', '$number', '$email', '$date')") or die('query failed');
+
+    if($insert)
+    {
+        $message = 'Appointement made successful';
+    }else{
+        $message = 'Appointement failed';
+    }
+}
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -99,7 +123,7 @@
                 <button type="button">Read more</button>
             </div>
             <div class="box ">
-                <img class="img-ser" src="images/aa.png" alt=" ">
+                <img class="img-ser" src="images/1010M.jpg" alt=" ">
                 <h3>Full Mouth Dental Implants</h3>
                 <p>If you have multiple missing or failing teeth, full mouth dental implants may be the ideal solution for you. Our implants, constructed to last a lifetime, will give you chewing ability without limitations, as well as a perfect smile!</p>
                 <button type="button">Read more</button>
@@ -129,32 +153,32 @@
         <h1 class="heading">Our Process</h1>
         <div class="box-container container">
             <div class="box ">
-                <img class="img-ser" src="images/Screen Shot 2022-09-15 at 9.30.49 AM.png" alt=" ">
+                <img class="img-ser" src="images/11.jpg" alt=" ">
                 <h3>Full Mouth Dental Implants</h3>
                 <p>If you have multiple missing or failing teeth, full mouth dental implants may be the ideal solution for you. Our implants, constructed to last a lifetime, will give you chewing ability without limitations, as well as a perfect smile!</p>
             </div>
             <div class="box ">
-                <img class="img-ser" src="images/Screen Shot 2022-09-15 at 9.31.55 AM.png" alt=" ">
+                <img class="img-ser" src="images/22.jpg" alt=" ">
                 <h3>Full Mouth Dental Implants</h3>
                 <p>If you have multiple missing or failing teeth, full mouth dental implants may be the ideal solution for you. Our implants, constructed to last a lifetime, will give you chewing ability without limitations, as well as a perfect smile!</p>
             </div>
             <div class="box ">
-                <img class="img-ser" src="images/Screen Shot 2022-09-15 at 9.32.24 AM.png" alt=" ">
+                <img class="img-ser" src="images/33.jpg" alt=" ">
                 <h3>Full Mouth Dental Implants</h3>
                 <p>If you have multiple missing or failing teeth, full mouth dental implants may be the ideal solution for you. Our implants, constructed to last a lifetime, will give you chewing ability without limitations, as well as a perfect smile!</p>
             </div>
             <div class="box ">
-                <img class="img-ser" src="images/Screen Shot 2022-09-15 at 9.32.32 AM.png" alt=" ">
+                <img class="img-ser" src="images/44.jpg" alt=" ">
                 <h3>Full Mouth Dental Implants</h3>
                 <p>If you have multiple missing or failing teeth, full mouth dental implants may be the ideal solution for you. Our implants, constructed to last a lifetime, will give you chewing ability without limitations, as well as a perfect smile!</p>
             </div>
             <div class="box ">
-                <img class="img-ser" src="images/uu.png" alt=" ">
+                <img class="img-ser" src="images/55.jpg" alt=" ">
                 <h3>Full Mouth Dental Implants</h3>
                 <p>If you have multiple missing or failing teeth, full mouth dental implants may be the ideal solution for you. Our implants, constructed to last a lifetime, will give you chewing ability without limitations, as well as a perfect smile!</p>
             </div>
             <div class="box ">
-                <img class="img-ser" src="images/Screen Shot 2022-09-15 at 9.30.36 AM.png" alt=" ">
+                <img class="img-ser" src="images/88.jpeg" alt=" ">
                 <h3>Full Mouth Dental Implants</h3>
                 <p>If you have multiple missing or failing teeth, full mouth dental implants may be the ideal solution for you. Our implants, constructed to last a lifetime, will give you chewing ability without limitations, as well as a perfect smile!</p>
             </div>
@@ -219,31 +243,60 @@
     <section class="contact">
         <h1 class="heading">Make appointement</h1>
         <!----The action attribute will default to the current URL. It is the most reliable and easiest way to say "submit the form to the same place it came from".------->
-        <form action="<?php echo $_server['PHP_SELF']; ?>" method=" post ">
-        <?php
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+            <?php
             if(isset($message))
             {
-                echo '<p class="message">'.$message.'</p>';
+                //echo '<p class="message">'.$message.'</p>';
+                //foreach($message as $message)
+                //{
+                    echo '<p class = "message" > '.$message.' </p>';
+                //}
             }
-        ?>
-        <h1 class="message">Testing message box</h1>
-            <span>Your name:</span>
-            <input type="text " name="name " placeholder="Enter your name " class="box ">
-            <span>Your email:</span>
-            <input type="text " name="email " placeholder="Enter your email " class="box ">
-            <span>Your password:</span>
-            <input type="text " name="password " placeholder="Enter your password " class="box ">
-            <span>Your dateAppointement:</span>
-            <input type="datetime-local " name="date " placeholder="Enter your dateTime " class="box ">
-            <input type="submit " value="Make appointement " name="submit " class="link-btn ">
+            ?>
+                <span>Your name:</span>
+                <input type="name" name="name" placeholder="Enter your name " class="box" required>
+                <span>Your number:</span>
+                <input type="number" name="number" placeholder="Enter your phoneNumber" class="box" required>
+                <span>Your email:</span>
+                <input type="email" name="email" placeholder="Enter your email " class="box" required>
+                <span>Your password:</span>
+                <input type="password" name="password" placeholder="Enter your password " class="box" required>
+                <span>Your dateAppointement:</span>
+                <input type="datetime-local" name="date" placeholder="Enter your dateTime " class="box" required>
+                <input type="submit" value="Make appointement " name="submit" class="link-btn">
         </form>
 
     </section>
     <!-----------contact section end------------>
+    <section class="footer">
+        <div class="box-container container">
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <h3>Phone number</h3>                                                 
+                <p>212-639884918</p>
+                <p>212-616805240</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Morroco-khouribga-8000</h3>
+                <p>Opening address</p>
+                <p>07:00 AM to 08:00 PM</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-clock"></i>
+                <h3>Our address</h3>
+                <p>Morroco-khouribga-8000</p>
+                <p>souchen1337@gmail.com</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <h3>Email address</h3>
+                <p>soukainaouchenuai@gmail.com</p>
+                <p>souchen1337@gmail.com</p>
+            </div>
 
-
-
-    <script src="script.js "></script>
+            <script src="script.js "></script>
 </body>
 
 </html>
